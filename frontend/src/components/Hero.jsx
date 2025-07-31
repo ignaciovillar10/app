@@ -80,7 +80,7 @@ const Hero = () => {
                   <span className="code-string"> 'Aplicación Increíble'</span>
                 </div>
                 <div className="code-line">
-                  <span className="code-punctuation">}</span>
+                  <span className="code-punctuation">{"}"}</span>
                 </div>
               </div>
             </div>
