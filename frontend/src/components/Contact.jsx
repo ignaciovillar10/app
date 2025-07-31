@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import { Send, Mail, Phone, MapPin, MessageCircle } from "lucide-react";
+import axios from "axios";
+
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const API = `${BACKEND_URL}/api`;
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -8,6 +12,10 @@ const Contact = () => {
     service: "",
     message: ""
   });
+  
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [error, setError] = useState("");
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -17,17 +25,34 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    // Mock form submission
-    alert("¡Mensaje enviado! Te contactaré pronto.");
-    setFormData({
-      name: "",
-      email: "",
-      service: "",
-      message: ""
-    });
+    setIsLoading(true);
+    setError("");
+    
+    try {
+      const response = await axios.post(`${API}/contact`, formData);
+      
+      if (response.status === 200) {
+        setIsSuccess(true);
+        setFormData({
+          name: "",
+          email: "",
+          service: "",
+          message: ""
+        });
+        
+        // Mostrar mensaje de éxito por 5 segundos
+        setTimeout(() => {
+          setIsSuccess(false);
+        }, 5000);
+      }
+    } catch (error) {
+      console.error("Error al enviar mensaje:", error);
+      setError("Hubo un error al enviar tu mensaje. Por favor intenta de nuevo.");
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const contactInfo = [
@@ -111,6 +136,24 @@ const Contact = () => {
           </div>
           
           <div className="contact-form-container">
+            {isSuccess && (
+              <div className="success-message">
+                <div className="success-content">
+                  <Send className="success-icon" size={24} />
+                  <div>
+                    <h4>¡Mensaje enviado exitosamente!</h4>
+                    <p>Te contactaré pronto. Gracias por tu interés.</p>
+                  </div>
+                </div>
+              </div>
+            )}
+            
+            {error && (
+              <div className="error-message">
+                <p>{error}</p>
+              </div>
+            )}
+            
             <form className="contact-form" onSubmit={handleSubmit}>
               <div className="form-group">
                 <label htmlFor="name" className="form-label">
@@ -125,6 +168,7 @@ const Contact = () => {
                   className="form-input"
                   placeholder="Tu nombre"
                   required
+                  disabled={isLoading}
                 />
               </div>
               
@@ -141,6 +185,7 @@ const Contact = () => {
                   className="form-input"
                   placeholder="tu@email.com"
                   required
+                  disabled={isLoading}
                 />
               </div>
               
@@ -155,6 +200,7 @@ const Contact = () => {
                   onChange={handleInputChange}
                   className="form-select"
                   required
+                  disabled={isLoading}
                 >
                   <option value="">Selecciona un servicio</option>
                   <option value="web-development">Desarrollo Web</option>
@@ -178,11 +224,16 @@ const Contact = () => {
                   placeholder="Cuéntame sobre tu proyecto..."
                   rows={5}
                   required
+                  disabled={isLoading}
                 />
               </div>
               
-              <button type="submit" className="btn-primary form-submit">
-                <span>Enviar Mensaje</span>
+              <button 
+                type="submit" 
+                className={`btn-primary form-submit ${isLoading ? 'loading' : ''}`}
+                disabled={isLoading}
+              >
+                <span>{isLoading ? 'Enviando...' : 'Enviar Mensaje'}</span>
                 <Send size={20} />
               </button>
             </form>
