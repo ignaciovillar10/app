@@ -73,7 +73,7 @@ const Hero = () => {
                   <span className="code-function"> crearSolucion</span>
                   <span className="code-punctuation">(</span>
                   <span className="code-parameter">idea</span>
-                  <span className="code-punctuation">) {</span>
+                  <span className="code-punctuation">) {"{"}</span>
                 </div>
                 <div className="code-line code-indent">
                   <span className="code-keyword">return</span>
