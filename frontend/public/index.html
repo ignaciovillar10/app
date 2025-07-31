@@ -1,26 +1,1793 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
-        <meta name="description" content="A product of emergent.sh" />
-        <link rel="stylesheet" href="../src/style.css" />
-        <title>Emergent | Fullstack App</title>
-    </head>
-    <body>
-        <noscript>You need to enable JavaScript to run this app.</noscript>
-        <div id="root"></div>
-        <a  id="emergent-badge"  class="emergent-badge"  target="_blank"
-            href="https://app.emergent.sh/?utm_source=emergent-badge"
-        >
-            <div class="emergent-badge-container">
-                <img
-                    class="emergent-badge-img"
-                    src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4"
-                    alt="Emergent Badge"
-                />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="A product of emergent.sh">
+    <title>Document</title>
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Emergent | Fullstack App</title>
+
+    <script type="text/javascript" crossorigin="anonymous" async=""
+        src="https://us-assets.i.posthog.com/static/array.js"></script>
+    <script defer="" src="/static/js/bundle.js"></script>
+</head>
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+        <div class="App">
+            <div class="dark-container">
+                <header class="dark-header">
+                    <div class="dark-logo-container">
+                        <h1 class="dark-logo-text">
+                            <font dir="auto" style="vertical-align: inherit;">
+                                <font dir="auto" style="vertical-align: inherit;">CreaMix-DS</font>
+                            </font>
+                        </h1>
+                    </div>
+                    <nav class="dark-nav"><button class="dark-nav-link">
+                            <font dir="auto" style="vertical-align: inherit;">
+                                <font dir="auto" style="vertical-align: inherit;">Servicios</font>
+                            </font>
+                        </button><button class="dark-nav-link">
+                            <font dir="auto" style="vertical-align: inherit;">
+                                <font dir="auto" style="vertical-align: inherit;">Acerca de</font>
+                            </font>
+                        </button><button class="dark-nav-link">
+                            <font dir="auto" style="vertical-align: inherit;">
+                                <font dir="auto" style="vertical-align: inherit;">Portafolio</font>
+                            </font>
+                        </button><button class="dark-nav-link">
+                            <font dir="auto" style="vertical-align: inherit;">
+                                <font dir="auto" style="vertical-align: inherit;">Contacto</font>
+                            </font>
+                        </button></nav>
+                    <div class="mobile-menu-button"><button class="mobile-menu-toggle"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-menu" aria-hidden="true">
+                                <path d="M4 12h16"></path>
+                                <path d="M4 18h16"></path>
+                                <path d="M4 6h16"></path>
+                            </svg></button></div>
+                </header>
+                <main>
+                    <section class="hero-section">
+                        <div class="dark-content-container">
+                            <div class="hero-grid">
+                                <div class="hero-content">
+                                    <div class="hero-badge"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-star hero-badge-icon" aria-hidden="true">
+                                            <path
+                                                d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                            </path>
+                                        </svg><span>
+                                            <font dir="auto" style="vertical-align: inherit;">
+                                                <font dir="auto" style="vertical-align: inherit;">Desarrollador
+                                                    Full-Stack Profesional</font>
+                                            </font>
+                                        </span></div>
+                                    <h1 class="display-huge hero-title">
+                                        <font dir="auto" style="vertical-align: inherit;">
+                                            <font dir="auto" style="vertical-align: inherit;">Transformamos Ideas en
+                                            </font>
+                                        </font><span class="hero-accent">
+                                            <font dir="auto" style="vertical-align: inherit;">
+                                                <font dir="auto" style="vertical-align: inherit;">Soluciones Digitales
+                                                </font>
+                                            </font>
+                                        </span>
+                                    </h1>
+                                    <p class="body-large hero-description">
+                                        <font dir="auto" style="vertical-align: inherit;">
+                                            <font dir="auto" style="vertical-align: inherit;">Como agente de servicios
+                                                de desarrollo, creo aplicaciones web y móviles de alta calidad que
+                                                impulsan el crecimiento de tu negocio. Especializado en tecnologías
+                                                modernas y experiencias de usuario excepcionales.</font>
+                                        </font>
+                                    </p>
+                                    <div class="hero-actions"><button class="btn-primary hero-cta"><span>
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Ver Mis Servicios
+                                                    </font>
+                                                </font>
+                                            </span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-arrow-right" aria-hidden="true">
+                                                <path d="M5 12h14"></path>
+                                                <path d="m12 5 7 7-7 7"></path>
+                                            </svg></button><button class="btn-secondary hero-secondary"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-code" aria-hidden="true">
+                                                <polyline points="16 18 22 12 16 6"></polyline>
+                                                <polyline points="8 6 2 12 8 18"></polyline>
+                                            </svg><span>
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Ver Portafolio
+                                                    </font>
+                                                </font>
+                                            </span></button></div>
+                                    <div class="hero-stats">
+                                        <div class="hero-stat"><span class="hero-stat-number">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">50+</font>
+                                                </font>
+                                            </span><span class="hero-stat-label">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Proyectos
+                                                        completados</font>
+                                                </font>
+                                            </span></div>
+                                        <div class="hero-stat"><span class="hero-stat-number">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">3 años</font>
+                                                </font>
+                                            </span><span class="hero-stat-label">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">de Experiencia
+                                                    </font>
+                                                </font>
+                                            </span></div>
+                                        <div class="hero-stat"><span class="hero-stat-number">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">100%</font>
+                                                </font>
+                                            </span><span class="hero-stat-label">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Satisfacción del
+                                                        cliente</font>
+                                                </font>
+                                            </span></div>
+                                    </div>
+                                </div>
+                                <div class="hero-visual">
+                                    <div class="hero-code-preview">
+                                        <div class="code-header">
+                                            <div class="code-dots"><span></span><span></span><span></span></div><span
+                                                class="code-title">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">CreaMix-DS</font>
+                                                </font>
+                                            </span>
+                                        </div>
+                                        <div class="code-content">
+                                            <div class="code-line"><span class="code-keyword">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">const </font>
+                                                    </font>
+                                                </span><span class="code-variable">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">desarrollador
+                                                        </font>
+                                                    </font>
+                                                </span><span class="code-operator">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">= </font>
+                                                    </font>
+                                                </span><span class="code-string">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">'CreaMix-DS'
+                                                        </font>
+                                                    </font>
+                                                </span></div>
+                                            <div class="code-line"><span class="code-keyword">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">función
+                                                        </font>
+                                                    </font>
+                                                </span><span class="code-function">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">crearSolucion
+                                                        </font>
+                                                    </font>
+                                                </span><span class="code-punctuation">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">( </font>
+                                                    </font>
+                                                </span><span class="code-parameter">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">idea </font>
+                                                    </font>
+                                                </span><span class="code-punctuation">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">) </font>
+                                                    </font>
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">{</font>
+                                                    </font>
+                                                </span></div>
+                                            <div class="code-line code-indent"><span class="code-keyword">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">volver </font>
+                                                    </font>
+                                                </span><span class="code-string">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">'Aplicación
+                                                            Increíble'</font>
+                                                    </font>
+                                                </span></div>
+                                            <div class="code-line"><span class="code-punctuation">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">}</font>
+                                                    </font>
+                                                </span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="services" class="services-section">
+                        <div class="dark-content-container">
+                            <div class="section-header">
+                                <h2 class="display-large section-title">
+                                    <font dir="auto" style="vertical-align: inherit;">
+                                        <font dir="auto" style="vertical-align: inherit;">Servicios Profesionales</font>
+                                    </font>
+                                </h2>
+                                <p class="body-large section-description">
+                                    <font dir="auto" style="vertical-align: inherit;">
+                                        <font dir="auto" style="vertical-align: inherit;">Ofrezco soluciones completas
+                                            de desarrollo que cubren todas las necesidades tecnológicas de tu proyecto o
+                                            empresa.</font>
+                                    </font>
+                                </p>
+                            </div>
+                            <div class="services-grid">
+                                <div class="service-card">
+                                    <div class="service-icon-container"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-code service-icon" aria-hidden="true">
+                                            <polyline points="16 18 22 12 16 6"></polyline>
+                                            <polyline points="8 6 2 12 8 18"></polyline>
+                                        </svg></div>
+                                    <div class="service-content">
+                                        <h3 class="heading-2 service-title">
+                                            <font dir="auto" style="vertical-align: inherit;">
+                                                <font dir="auto" style="vertical-align: inherit;">Desarrollo Web</font>
+                                            </font>
+                                        </h3>
+                                        <p class="body-medium service-description">
+                                            <font dir="auto" style="vertical-align: inherit;">
+                                                <font dir="auto" style="vertical-align: inherit;">Aplicaciones web
+                                                    modernas y responsivas con las últimas tecnologías. Desde landing
+                                                    pages hasta plataformas complejas.</font>
+                                            </font>
+                                        </p>
+                                        <div class="service-features"><span class="service-feature">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">React/Vue.js
+                                                    </font>
+                                                </font>
+                                            </span><span class="service-feature">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Node.js/Python
+                                                    </font>
+                                                </font>
+                                            </span><span class="service-feature">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Bases de datos
+                                                    </font>
+                                                </font>
+                                            </span><span class="service-feature">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">API REST</font>
+                                                </font>
+                                            </span></div>
+                                        <div class="service-footer"><span class="service-price">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Desde $2,500 USD
+                                                    </font>
+                                                </font>
+                                            </span><button class="service-cta"><span>
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">Más detalles
+                                                        </font>
+                                                    </font>
+                                                </span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-arrow-right" aria-hidden="true">
+                                                    <path d="M5 12h14"></path>
+                                                    <path d="m12 5 7 7-7 7"></path>
+                                                </svg></button></div>
+                                    </div>
+                                </div>
+                                <div class="service-card">
+                                    <div class="service-icon-container"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-smartphone service-icon" aria-hidden="true">
+                                            <rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect>
+                                            <path d="M12 18h.01"></path>
+                                        </svg></div>
+                                    <div class="service-content">
+                                        <h3 class="heading-2 service-title">
+                                            <font dir="auto" style="vertical-align: inherit;">
+                                                <font dir="auto" style="vertical-align: inherit;">Aplicaciones Móviles
+                                                </font>
+                                            </font>
+                                        </h3>
+                                        <p class="body-medium service-description">
+                                            <font dir="auto" style="vertical-align: inherit;">
+                                                <font dir="auto" style="vertical-align: inherit;">Aplicaciones nativas e
+                                                    híbridas para iOS y Android. Experiencias móviles fluidas y
+                                                    optimizadas.</font>
+                                            </font>
+                                        </p>
+                                        <div class="service-features"><span class="service-feature">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">React Native
+                                                    </font>
+                                                </font>
+                                            </span><span class="service-feature">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Aleteo</font>
+                                                </font>
+                                            </span><span class="service-feature">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">iOS/Android</font>
+                                                </font>
+                                            </span><span class="service-feature">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Tienda de
+                                                        aplicaciones</font>
+                                                </font>
+                                            </span></div>
+                                        <div class="service-footer"><span class="service-price">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Desde $3,500 USD
+                                                    </font>
+                                                </font>
+                                            </span><button class="service-cta"><span>
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">Más detalles
+                                                        </font>
+                                                    </font>
+                                                </span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-arrow-right" aria-hidden="true">
+                                                    <path d="M5 12h14"></path>
+                                                    <path d="m12 5 7 7-7 7"></path>
+                                                </svg></button></div>
+                                    </div>
+                                </div>
+                                <div class="service-card">
+                                    <div class="service-icon-container"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-palette service-icon" aria-hidden="true">
+                                            <path
+                                                d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z">
+                                            </path>
+                                            <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
+                                            <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
+                                            <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
+                                            <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                                        </svg></div>
+                                    <div class="service-content">
+                                        <h3 class="heading-2 service-title">
+                                            <font dir="auto" style="vertical-align: inherit;">
+                                                <font dir="auto" style="vertical-align: inherit;">Diseño UI/UX</font>
+                                            </font>
+                                        </h3>
+                                        <p class="body-medium service-description">
+                                            <font dir="auto" style="vertical-align: inherit;">
+                                                <font dir="auto" style="vertical-align: inherit;">Diseño de interfaces
+                                                    intuitivas y experiencias de usuario excepcionales que convierten
+                                                    visitantes en clientes.</font>
+                                            </font>
+                                        </p>
+                                        <div class="service-features"><span class="service-feature">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Figma/Adobe XD
+                                                    </font>
+                                                </font>
+                                            </span><span class="service-feature">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Prototipos</font>
+                                                </font>
+                                            </span><span class="service-feature">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Sistema de diseño
+                                                    </font>
+                                                </font>
+                                            </span><span class="service-feature">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Prueba de UX
+                                                    </font>
+                                                </font>
+                                            </span></div>
+                                        <div class="service-footer"><span class="service-price">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Desde $1,500 USD
+                                                    </font>
+                                                </font>
+                                            </span><button class="service-cta"><span>
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">Más detalles
+                                                        </font>
+                                                    </font>
+                                                </span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-arrow-right" aria-hidden="true">
+                                                    <path d="M5 12h14"></path>
+                                                    <path d="m12 5 7 7-7 7"></path>
+                                                </svg></button></div>
+                                    </div>
+                                </div>
+                                <div class="service-card">
+                                    <div class="service-icon-container"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-settings service-icon" aria-hidden="true">
+                                            <path
+                                                d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z">
+                                            </path>
+                                            <circle cx="12" cy="12" r="3"></circle>
+                                        </svg></div>
+                                    <div class="service-content">
+                                        <h3 class="heading-2 service-title">
+                                            <font dir="auto" style="vertical-align: inherit;">
+                                                <font dir="auto" style="vertical-align: inherit;">Consultoría Técnica
+                                                </font>
+                                            </font>
+                                        </h3>
+                                        <p class="body-medium service-description">
+                                            <font dir="auto" style="vertical-align: inherit;">
+                                                <font dir="auto" style="vertical-align: inherit;">Asesoramiento
+                                                    especializado en arquitectura, tecnologías y estrategias de
+                                                    desarrollo para tu proyecto.</font>
+                                            </font>
+                                        </p>
+                                        <div class="service-features"><span class="service-feature">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Arquitectura
+                                                    </font>
+                                                </font>
+                                            </span><span class="service-feature">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Revisión de código
+                                                    </font>
+                                                </font>
+                                            </span><span class="service-feature">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Actuación</font>
+                                                </font>
+                                            </span><span class="service-feature">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Seguridad</font>
+                                                </font>
+                                            </span></div>
+                                        <div class="service-footer"><span class="service-price">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Desde $100
+                                                        USD/hora</font>
+                                                </font>
+                                            </span><button class="service-cta"><span>
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">Más detalles
+                                                        </font>
+                                                    </font>
+                                                </span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-arrow-right" aria-hidden="true">
+                                                    <path d="M5 12h14"></path>
+                                                    <path d="m12 5 7 7-7 7"></path>
+                                                </svg></button></div>
+                                    </div>
+                                </div>
+                                <div class="service-card">
+                                    <div class="service-icon-container"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-headphones service-icon" aria-hidden="true">
+                                            <path
+                                                d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3">
+                                            </path>
+                                        </svg></div>
+                                    <div class="service-content">
+                                        <h3 class="heading-2 service-title">
+                                            <font dir="auto" style="vertical-align: inherit;">
+                                                <font dir="auto" style="vertical-align: inherit;">Mantenimiento y
+                                                    soporte</font>
+                                            </font>
+                                        </h3>
+                                        <p class="body-medium service-description">
+                                            <font dir="auto" style="vertical-align: inherit;">
+                                                <font dir="auto" style="vertical-align: inherit;">Soporte continuo,
+                                                    actualizaciones y mantenimiento para mantener tu aplicación
+                                                    funcionando perfectamente.</font>
+                                            </font>
+                                        </p>
+                                        <div class="service-features"><span class="service-feature">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Soporte 24/7
+                                                    </font>
+                                                </font>
+                                            </span><span class="service-feature">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Actualizaciones
+                                                    </font>
+                                                </font>
+                                            </span><span class="service-feature">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Copias de
+                                                        seguridad</font>
+                                                </font>
+                                            </span><span class="service-feature">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Monitoreo</font>
+                                                </font>
+                                            </span></div>
+                                        <div class="service-footer"><span class="service-price">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Desde $500 USD/mes
+                                                    </font>
+                                                </font>
+                                            </span><button class="service-cta"><span>
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">Más detalles
+                                                        </font>
+                                                    </font>
+                                                </span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-arrow-right" aria-hidden="true">
+                                                    <path d="M5 12h14"></path>
+                                                    <path d="m12 5 7 7-7 7"></path>
+                                                </svg></button></div>
+                                    </div>
+                                </div>
+                                <div class="service-card">
+                                    <div class="service-icon-container"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-zap service-icon" aria-hidden="true">
+                                            <path
+                                                d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
+                                            </path>
+                                        </svg></div>
+                                    <div class="service-content">
+                                        <h3 class="heading-2 service-title">
+                                            <font dir="auto" style="vertical-align: inherit;">
+                                                <font dir="auto" style="vertical-align: inherit;">Optimización y
+                                                    rendimiento</font>
+                                            </font>
+                                        </h3>
+                                        <p class="body-medium service-description">
+                                            <font dir="auto" style="vertical-align: inherit;">
+                                                <font dir="auto" style="vertical-align: inherit;">Mejora el rendimiento
+                                                    de tu aplicación existente. Análisis profundo y optimizaciones
+                                                    avanzadas.</font>
+                                            </font>
+                                        </p>
+                                        <div class="service-features"><span class="service-feature">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Análisis</font>
+                                                </font>
+                                            </span><span class="service-feature">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">SEO/Vitalidades
+                                                        básicas</font>
+                                                </font>
+                                            </span><span class="service-feature">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Almacenamiento en
+                                                        caché</font>
+                                                </font>
+                                            </span><span class="service-feature">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Configuración de
+                                                        CDN</font>
+                                                </font>
+                                            </span></div>
+                                        <div class="service-footer"><span class="service-price">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Desde $800 USD
+                                                    </font>
+                                                </font>
+                                            </span><button class="service-cta"><span>
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">Más detalles
+                                                        </font>
+                                                    </font>
+                                                </span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-arrow-right" aria-hidden="true">
+                                                    <path d="M5 12h14"></path>
+                                                    <path d="m12 5 7 7-7 7"></path>
+                                                </svg></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="about" class="about-section">
+                        <div class="dark-content-container">
+                            <div class="about-grid">
+                                <div class="about-content">
+                                    <h2 class="display-large about-title">
+                                        <font dir="auto" style="vertical-align: inherit;">
+                                            <font dir="auto" style="vertical-align: inherit;">Acerca de CreaMix-DS
+                                            </font>
+                                        </font>
+                                    </h2>
+                                    <p class="body-large about-description">
+                                        <font dir="auto" style="vertical-align: inherit;">
+                                            <font dir="auto" style="vertical-align: inherit;">Soy un desarrollador
+                                                apasionado por crear soluciones digitales que marcan la diferencia. Con
+                                                más de 3 años de experiencia en el sector, me especializo en transformar
+                                                ideas complejas en aplicaciones intuitivas y efectivas.</font>
+                                        </font>
+                                    </p>
+                                    <div class="about-skills">
+                                        <h3 class="heading-2">
+                                            <font dir="auto" style="vertical-align: inherit;">
+                                                <font dir="auto" style="vertical-align: inherit;">Tecnologías
+                                                    principales</font>
+                                            </font>
+                                        </h3>
+                                        <div class="skills-grid"><span class="skill-tag">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Reaccionar</font>
+                                                </font>
+                                            </span><span class="skill-tag">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Node.js</font>
+                                                </font>
+                                            </span><span class="skill-tag">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Pitón</font>
+                                                </font>
+                                            </span><span class="skill-tag">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">API rápida</font>
+                                                </font>
+                                            </span><span class="skill-tag">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">MongoDB</font>
+                                                </font>
+                                            </span><span class="skill-tag">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">PostgreSQL</font>
+                                                </font>
+                                            </span><span class="skill-tag">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">React Native
+                                                    </font>
+                                                </font>
+                                            </span><span class="skill-tag">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Mecanografiado
+                                                    </font>
+                                                </font>
+                                            </span><span class="skill-tag">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">AWS</font>
+                                                </font>
+                                            </span><span class="skill-tag">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Estibador</font>
+                                                </font>
+                                            </span></div>
+                                    </div>
+                                    <div class="about-values">
+                                        <h3 class="heading-2">
+                                            <font dir="auto" style="vertical-align: inherit;">
+                                                <font dir="auto" style="vertical-align: inherit;">¿Por qué elegir
+                                                    CreaMix-DS?</font>
+                                            </font>
+                                        </h3>
+                                        <div class="values-list">
+                                            <div class="value-item"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                    height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check-big value-icon"
+                                                    aria-hidden="true">
+                                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                                    <path d="m9 11 3 3L22 4"></path>
+                                                </svg><span>
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">Enfoque
+                                                            centrado en resultados y ROI</font>
+                                                    </font>
+                                                </span></div>
+                                            <div class="value-item"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                    height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check-big value-icon"
+                                                    aria-hidden="true">
+                                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                                    <path d="m9 11 3 3L22 4"></path>
+                                                </svg><span>
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">Comunicación
+                                                            transparente en todo momento.</font>
+                                                    </font>
+                                                </span></div>
+                                            <div class="value-item"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                    height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check-big value-icon"
+                                                    aria-hidden="true">
+                                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                                    <path d="m9 11 3 3L22 4"></path>
+                                                </svg><span>
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">Soluciones
+                                                            escalables y mantenibles</font>
+                                                    </font>
+                                                </span></div>
+                                            <div class="value-item"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                    height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-circle-check-big value-icon"
+                                                    aria-hidden="true">
+                                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                                    <path d="m9 11 3 3L22 4"></path>
+                                                </svg><span>
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">Pruebas
+                                                            rigurosas y documentación completa.</font>
+                                                    </font>
+                                                </span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="about-achievements">
+                                    <div class="achievement-card">
+                                        <div class="achievement-icon-container"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="28" height="28" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" class="lucide lucide-award achievement-icon"
+                                                aria-hidden="true">
+                                                <path
+                                                    d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526">
+                                                </path>
+                                                <circle cx="12" cy="8" r="6"></circle>
+                                            </svg></div>
+                                        <div class="achievement-content">
+                                            <h4 class="heading-3 achievement-title">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Calidad Premium
+                                                    </font>
+                                                </font>
+                                            </h4>
+                                            <p class="body-medium achievement-description">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Código limpio y
+                                                        optimizado siguiendo las mejores prácticas</font>
+                                                </font>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="achievement-card">
+                                        <div class="achievement-icon-container"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="28" height="28" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" class="lucide lucide-clock achievement-icon"
+                                                aria-hidden="true">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <polyline points="12 6 12 12 16 14"></polyline>
+                                            </svg></div>
+                                        <div class="achievement-content">
+                                            <h4 class="heading-3 achievement-title">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Entrega puntual
+                                                    </font>
+                                                </font>
+                                            </h4>
+                                            <p class="body-medium achievement-description">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Cumplimiento de
+                                                        plazos garantizados en todos los proyectos.</font>
+                                                </font>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="achievement-card">
+                                        <div class="achievement-icon-container"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="28" height="28" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" class="lucide lucide-users achievement-icon"
+                                                aria-hidden="true">
+                                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                                <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                                <circle cx="9" cy="7" r="4"></circle>
+                                            </svg></div>
+                                        <div class="achievement-content">
+                                            <h4 class="heading-3 achievement-title">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Soporte Continuo
+                                                    </font>
+                                                </font>
+                                            </h4>
+                                            <p class="body-medium achievement-description">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Acompañamiento
+                                                        durante y después del desarrollo</font>
+                                                </font>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="portfolio" class="portfolio-section">
+                        <div class="dark-content-container">
+                            <div class="section-header">
+                                <h2 class="display-large section-title">
+                                    <font dir="auto" style="vertical-align: inherit;">
+                                        <font dir="auto" style="vertical-align: inherit;">Proyectos destacados</font>
+                                    </font>
+                                </h2>
+                                <p class="body-large section-description">
+                                    <font dir="auto" style="vertical-align: inherit;">
+                                        <font dir="auto" style="vertical-align: inherit;">Una selección de mis trabajos
+                                            más recientes y exitosos que demuestran la calidad y versatilidad de mis
+                                            servicios.</font>
+                                    </font>
+                                </p>
+                            </div>
+                            <div class="portfolio-grid">
+                                <div class="project-card">
+                                    <div class="project-image"><img alt="EcommercePro" class="project-img"
+                                            src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&amp;h=600&amp;fit=crop">
+                                        <div class="project-overlay">
+                                            <div class="project-links"><button class="project-link-btn"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-external-link" aria-hidden="true">
+                                                        <path d="M15 3h6v6"></path>
+                                                        <path d="M10 14 21 3"></path>
+                                                        <path
+                                                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                        </path>
+                                                    </svg></button><button class="project-link-btn"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-github" aria-hidden="true">
+                                                        <path
+                                                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                                                        </path>
+                                                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                                                    </svg></button></div>
+                                        </div>
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-category">
+                                            <font dir="auto" style="vertical-align: inherit;">
+                                                <font dir="auto" style="vertical-align: inherit;">Comercio electrónico
+                                                </font>
+                                            </font>
+                                        </div>
+                                        <h3 class="heading-2 project-title">
+                                            <font dir="auto" style="vertical-align: inherit;">
+                                                <font dir="auto" style="vertical-align: inherit;">EcommercePro</font>
+                                            </font>
+                                        </h3>
+                                        <p class="body-medium project-description">
+                                            <font dir="auto" style="vertical-align: inherit;">
+                                                <font dir="auto" style="vertical-align: inherit;">Plataforma de comercio
+                                                    electrónico completa con panel de administración, carrito de compras
+                                                    avanzado y sistema de pagos integrados.</font>
+                                            </font>
+                                        </p>
+                                        <div class="project-tech"><span class="tech-tag">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Reaccionar</font>
+                                                </font>
+                                            </span><span class="tech-tag">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Node.js</font>
+                                                </font>
+                                            </span><span class="tech-tag">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">MongoDB</font>
+                                                </font>
+                                            </span><span class="tech-tag">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Raya</font>
+                                                </font>
+                                            </span></div>
+                                        <div class="project-results">
+                                            <div class="project-result"><span class="result-number">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">+150%</font>
+                                                    </font>
+                                                </span><span class="result-label">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">Conversiones
+                                                        </font>
+                                                    </font>
+                                                </span></div>
+                                            <div class="project-result"><span class="result-number">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">2,3 segundos
+                                                        </font>
+                                                    </font>
+                                                </span><span class="result-label">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">Carga rápida
+                                                        </font>
+                                                    </font>
+                                                </span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card">
+                                    <div class="project-image"><img alt="Aplicación de salud" class="project-img"
+                                            src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&amp;h=600&amp;fit=crop">
+                                        <div class="project-overlay">
+                                            <div class="project-links"><button class="project-link-btn"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-external-link" aria-hidden="true">
+                                                        <path d="M15 3h6v6"></path>
+                                                        <path d="M10 14 21 3"></path>
+                                                        <path
+                                                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                        </path>
+                                                    </svg></button><button class="project-link-btn"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-github" aria-hidden="true">
+                                                        <path
+                                                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                                                        </path>
+                                                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                                                    </svg></button></div>
+                                        </div>
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-category">
+                                            <font dir="auto" style="vertical-align: inherit;">
+                                                <font dir="auto" style="vertical-align: inherit;">Salud</font>
+                                            </font>
+                                        </div>
+                                        <h3 class="heading-2 project-title">
+                                            <font dir="auto" style="vertical-align: inherit;">
+                                                <font dir="auto" style="vertical-align: inherit;">Aplicación de salud
+                                                </font>
+                                            </font>
+                                        </h3>
+                                        <p class="body-medium project-description">
+                                            <font dir="auto" style="vertical-align: inherit;">
+                                                <font dir="auto" style="vertical-align: inherit;">Aplicación móvil para
+                                                    el seguimiento de salud personal con integración de wearables y
+                                                    análisis de datos.</font>
+                                            </font>
+                                        </p>
+                                        <div class="project-tech"><span class="tech-tag">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">React Native
+                                                    </font>
+                                                </font>
+                                            </span><span class="tech-tag">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Pitón</font>
+                                                </font>
+                                            </span><span class="tech-tag">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">PostgreSQL</font>
+                                                </font>
+                                            </span><span class="tech-tag">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">AWS</font>
+                                                </font>
+                                            </span></div>
+                                        <div class="project-results">
+                                            <div class="project-result"><span class="result-number">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">10k+</font>
+                                                    </font>
+                                                </span><span class="result-label">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">Usuarios
+                                                            activos</font>
+                                                    </font>
+                                                </span></div>
+                                            <div class="project-result"><span class="result-number">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">4.8★</font>
+                                                    </font>
+                                                </span><span class="result-label">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">Calificación
+                                                            de la App Store</font>
+                                                    </font>
+                                                </span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card">
+                                    <div class="project-image"><img alt="Rastreador de finanzas" class="project-img"
+                                            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&amp;h=600&amp;fit=crop">
+                                        <div class="project-overlay">
+                                            <div class="project-links"><button class="project-link-btn"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-external-link" aria-hidden="true">
+                                                        <path d="M15 3h6v6"></path>
+                                                        <path d="M10 14 21 3"></path>
+                                                        <path
+                                                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                        </path>
+                                                    </svg></button><button class="project-link-btn"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-github" aria-hidden="true">
+                                                        <path
+                                                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                                                        </path>
+                                                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                                                    </svg></button></div>
+                                        </div>
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-category">
+                                            <font dir="auto" style="vertical-align: inherit;">
+                                                <font dir="auto" style="vertical-align: inherit;">Tecnología financiera
+                                                </font>
+                                            </font>
+                                        </div>
+                                        <h3 class="heading-2 project-title">
+                                            <font dir="auto" style="vertical-align: inherit;">
+                                                <font dir="auto" style="vertical-align: inherit;">Rastreador de finanzas
+                                                </font>
+                                            </font>
+                                        </h3>
+                                        <p class="body-medium project-description">
+                                            <font dir="auto" style="vertical-align: inherit;">
+                                                <font dir="auto" style="vertical-align: inherit;">Dashboard financiero
+                                                    para empresas con análisis avanzado, reportes automáticos y
+                                                    visualización de datos en tiempo real.</font>
+                                            </font>
+                                        </p>
+                                        <div class="project-tech"><span class="tech-tag">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Vue.js</font>
+                                                </font>
+                                            </span><span class="tech-tag">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">API rápida</font>
+                                                </font>
+                                            </span><span class="tech-tag">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Redis</font>
+                                                </font>
+                                            </span><span class="tech-tag">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Chart.js</font>
+                                                </font>
+                                            </span></div>
+                                        <div class="project-results">
+                                            <div class="project-result"><span class="result-number">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">40%</font>
+                                                    </font>
+                                                </span><span class="result-label">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">Tiempo
+                                                            ahorrado</font>
+                                                    </font>
+                                                </span></div>
+                                            <div class="project-result"><span class="result-number">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">99.9%</font>
+                                                    </font>
+                                                </span><span class="result-label">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">Tiempo de
+                                                            actividad</font>
+                                                    </font>
+                                                </span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-card">
+                                    <div class="project-image"><img alt="Centro de aprendizaje" class="project-img"
+                                            src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&amp;h=600&amp;fit=crop">
+                                        <div class="project-overlay">
+                                            <div class="project-links"><button class="project-link-btn"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-external-link" aria-hidden="true">
+                                                        <path d="M15 3h6v6"></path>
+                                                        <path d="M10 14 21 3"></path>
+                                                        <path
+                                                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                        </path>
+                                                    </svg></button><button class="project-link-btn"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-github" aria-hidden="true">
+                                                        <path
+                                                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                                                        </path>
+                                                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                                                    </svg></button></div>
+                                        </div>
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-category">
+                                            <font dir="auto" style="vertical-align: inherit;">
+                                                <font dir="auto" style="vertical-align: inherit;">Educación</font>
+                                            </font>
+                                        </div>
+                                        <h3 class="heading-2 project-title">
+                                            <font dir="auto" style="vertical-align: inherit;">
+                                                <font dir="auto" style="vertical-align: inherit;">Centro de aprendizaje
+                                                </font>
+                                            </font>
+                                        </h3>
+                                        <p class="body-medium project-description">
+                                            <font dir="auto" style="vertical-align: inherit;">
+                                                <font dir="auto" style="vertical-align: inherit;">Plataforma educativa
+                                                    interactiva con sistema de cursos, evaluaciones y seguimiento de
+                                                    progreso estudiantil.</font>
+                                            </font>
+                                        </p>
+                                        <div class="project-tech"><span class="tech-tag">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Next.js</font>
+                                                </font>
+                                            </span><span class="tech-tag">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">GraphQL</font>
+                                                </font>
+                                            </span><span class="tech-tag">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Prisma</font>
+                                                </font>
+                                            </span><span class="tech-tag">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">WebRTC</font>
+                                                </font>
+                                            </span></div>
+                                        <div class="project-results">
+                                            <div class="project-result"><span class="result-number">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">5k+</font>
+                                                    </font>
+                                                </span><span class="result-label">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">Estudiantes
+                                                        </font>
+                                                    </font>
+                                                </span></div>
+                                            <div class="project-result"><span class="result-number">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">92%</font>
+                                                    </font>
+                                                </span><span class="result-label">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">Completación
+                                                        </font>
+                                                    </font>
+                                                </span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="contact" class="contact-section">
+                        <div class="dark-content-container">
+                            <div class="section-header">
+                                <h2 class="display-large section-title">
+                                    <font dir="auto" style="vertical-align: inherit;">
+                                        <font dir="auto" style="vertical-align: inherit;">Comencemos tu Proyecto</font>
+                                    </font>
+                                </h2>
+                                <p class="body-large section-description">
+                                    <font dir="auto" style="vertical-align: inherit;">
+                                        <font dir="auto" style="vertical-align: inherit;">¿Tienes una idea increíble?
+                                            Hablemos sobre cómo puedo ayudarte a convertirla en realidad.</font>
+                                    </font>
+                                </p>
+                            </div>
+                            <div class="contact-grid">
+                                <div class="contact-info">
+                                    <h3 class="heading-2 contact-info-title">
+                                        <font dir="auto" style="vertical-align: inherit;">
+                                            <font dir="auto" style="vertical-align: inherit;">Información de contacto
+                                            </font>
+                                        </font>
+                                    </h3>
+                                    <div class="contact-methods">
+                                        <div class="contact-method">
+                                            <div class="contact-method-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" class="lucide lucide-mail"
+                                                    aria-hidden="true">
+                                                    <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                                                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                                </svg></div>
+                                            <div class="contact-method-content"><span class="contact-method-title">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">Correo
+                                                            electrónico</font>
+                                                    </font>
+                                                </span><a href="mailto:hola@creamix-ds.com"
+                                                    class="contact-method-value contact-link" target="_blank"
+                                                    rel="noopener noreferrer">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">
+                                                            hola@creamix-ds.com</font>
+                                                    </font>
+                                                </a></div>
+                                        </div>
+                                        <div class="contact-method">
+                                            <div class="contact-method-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" class="lucide lucide-phone"
+                                                    aria-hidden="true">
+                                                    <path
+                                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                                    </path>
+                                                </svg></div>
+                                            <div class="contact-method-content"><span class="contact-method-title">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">Teléfono
+                                                        </font>
+                                                    </font>
+                                                </span><a href="tel:+5211234567890"
+                                                    class="contact-method-value contact-link" target="_blank"
+                                                    rel="noopener noreferrer">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">+52 123 456
+                                                            7890</font>
+                                                    </font>
+                                                </a></div>
+                                        </div>
+                                        <div class="contact-method">
+                                            <div class="contact-method-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" class="lucide lucide-message-circle"
+                                                    aria-hidden="true">
+                                                    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                                                </svg></div>
+                                            <div class="contact-method-content"><span class="contact-method-title">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">WhatsApp
+                                                        </font>
+                                                    </font>
+                                                </span><a href="https://wa.me/5211234567890"
+                                                    class="contact-method-value contact-link" target="_blank"
+                                                    rel="noopener noreferrer">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">Chatear ahora
+                                                        </font>
+                                                    </font>
+                                                </a></div>
+                                        </div>
+                                        <div class="contact-method">
+                                            <div class="contact-method-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" class="lucide lucide-map-pin"
+                                                    aria-hidden="true">
+                                                    <path
+                                                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                                    </path>
+                                                    <circle cx="12" cy="10" r="3"></circle>
+                                                </svg></div>
+                                            <div class="contact-method-content"><span class="contact-method-title">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">Ubicación
+                                                        </font>
+                                                    </font>
+                                                </span><span class="contact-method-value">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">Ciudad de
+                                                            México, MX</font>
+                                                    </font>
+                                                </span></div>
+                                        </div>
+                                    </div>
+                                    <div class="contact-cta">
+                                        <h4 class="heading-3">
+                                            <font dir="auto" style="vertical-align: inherit;">
+                                                <font dir="auto" style="vertical-align: inherit;">¿Listo para empezar?
+                                                </font>
+                                            </font>
+                                        </h4>
+                                        <p class="body-medium">
+                                            <font dir="auto" style="vertical-align: inherit;">
+                                                <font dir="auto" style="vertical-align: inherit;">Respondo en menos de
+                                                    24 horas. Hablemos sobre tu proyecto y cómo puedo ayudarte a
+                                                    alcanzar tus objetivos.</font>
+                                            </font>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="contact-form-container">
+                                    <form class="contact-form">
+                                        <div class="form-group"><label for="name" class="form-label">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Nombre completo
+                                                    </font>
+                                                </font>
+                                            </label><input id="name" class="form-input" placeholder="Tu nombre"
+                                                required="" type="text" value="" name="name"></div>
+                                        <div class="form-group"><label for="email" class="form-label">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Correo electrónico
+                                                    </font>
+                                                </font>
+                                            </label><input id="email" class="form-input" placeholder="tu@email.com"
+                                                required="" type="email" value="" name="email"></div>
+                                        <div class="form-group"><label for="service" class="form-label">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Servicio de
+                                                        Interés</font>
+                                                </font>
+                                            </label><select id="service" name="service" class="form-select" required="">
+                                                <option value="">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">Seleccione un
+                                                            servicio</font>
+                                                    </font>
+                                                </option>
+                                                <option value="web-development">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">Desarrollo Web
+                                                        </font>
+                                                    </font>
+                                                </option>
+                                                <option value="mobile-development">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">Aplicación
+                                                            móvil</font>
+                                                    </font>
+                                                </option>
+                                                <option value="ui-ux-design">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">Diseño UI/UX
+                                                        </font>
+                                                    </font>
+                                                </option>
+                                                <option value="consulting">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">Consultoría
+                                                        </font>
+                                                    </font>
+                                                </option>
+                                                <option value="maintenance">
+                                                    <font dir="auto" style="vertical-align: inherit;">
+                                                        <font dir="auto" style="vertical-align: inherit;">Mantenimiento
+                                                        </font>
+                                                    </font>
+                                                </option>
+                                            </select></div>
+                                        <div class="form-group"><label for="message" class="form-label">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Mensaje</font>
+                                                </font>
+                                            </label><textarea id="message" name="message" class="form-textarea"
+                                                placeholder="Cuéntame sobre tu proyecto..." rows="5"
+                                                required=""></textarea></div><button type="submit"
+                                            class="btn-primary form-submit "><span>
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Enviar mensaje
+                                                    </font>
+                                                </font>
+                                            </span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-send" aria-hidden="true">
+                                                <path
+                                                    d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z">
+                                                </path>
+                                                <path d="m21.854 2.147-10.94 10.939"></path>
+                                            </svg></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+                <footer class="footer">
+                    <div class="dark-content-container">
+                        <div class="footer-content">
+                            <div class="footer-brand">
+                                <h3 class="footer-logo">
+                                    <font dir="auto" style="vertical-align: inherit;">
+                                        <font dir="auto" style="vertical-align: inherit;">CreaMix-DS</font>
+                                    </font>
+                                </h3>
+                                <p class="footer-tagline">
+                                    <font dir="auto" style="vertical-align: inherit;">
+                                        <font dir="auto" style="vertical-align: inherit;">Transformando ideas en
+                                            soluciones digitales excepcionales</font>
+                                    </font>
+                                </p>
+                                <div class="footer-social"><a href="https://github.com/creamix-ds"
+                                        class="footer-social-link" target="_blank" rel="noopener noreferrer"
+                                        aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-github" aria-hidden="true">
+                                            <path
+                                                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                                            </path>
+                                            <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                                        </svg></a><a href="https://linkedin.com/in/creamix-ds"
+                                        class="footer-social-link" target="_blank" rel="noopener noreferrer"
+                                        aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-linkedin" aria-hidden="true">
+                                            <path
+                                                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                            </path>
+                                            <rect width="4" height="12" x="2" y="9"></rect>
+                                            <circle cx="4" cy="4" r="2"></circle>
+                                        </svg></a><a href="https://twitter.com/creamix_ds" class="footer-social-link"
+                                        target="_blank" rel="noopener noreferrer" aria-label="Gorjeo"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"
+                                            aria-hidden="true">
+                                            <path
+                                                d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                                            </path>
+                                        </svg></a><a href="mailto:hola@creamix-ds.com" class="footer-social-link"
+                                        target="_blank" rel="noopener noreferrer" aria-label="Correo electrónico"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"
+                                            aria-hidden="true">
+                                            <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                        </svg></a></div>
+                            </div>
+                            <div class="footer-links">
+                                <div class="footer-section">
+                                    <h4 class="footer-section-title">
+                                        <font dir="auto" style="vertical-align: inherit;">
+                                            <font dir="auto" style="vertical-align: inherit;">Servicios</font>
+                                        </font>
+                                    </h4>
+                                    <ul class="footer-section-links">
+                                        <li><a href="#services" class="footer-link">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Desarrollo Web
+                                                    </font>
+                                                </font>
+                                            </a></li>
+                                        <li><a href="#services" class="footer-link">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Aplicaciones
+                                                        móviles</font>
+                                                </font>
+                                            </a></li>
+                                        <li><a href="#services" class="footer-link">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Diseño UI/UX
+                                                    </font>
+                                                </font>
+                                            </a></li>
+                                        <li><a href="#services" class="footer-link">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Consultoría</font>
+                                                </font>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-section">
+                                    <h4 class="footer-section-title">
+                                        <font dir="auto" style="vertical-align: inherit;">
+                                            <font dir="auto" style="vertical-align: inherit;">Empresa</font>
+                                        </font>
+                                    </h4>
+                                    <ul class="footer-section-links">
+                                        <li><a href="#about" class="footer-link">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Acerca de</font>
+                                                </font>
+                                            </a></li>
+                                        <li><a href="#portfolio" class="footer-link">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Portafolio</font>
+                                                </font>
+                                            </a></li>
+                                        <li><a href="#contact" class="footer-link">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Contacto</font>
+                                                </font>
+                                            </a></li>
+                                        <li><a href="#" class="footer-link">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Blog</font>
+                                                </font>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-section">
+                                    <h4 class="footer-section-title">
+                                        <font dir="auto" style="vertical-align: inherit;">
+                                            <font dir="auto" style="vertical-align: inherit;">Legal</font>
+                                        </font>
+                                    </h4>
+                                    <ul class="footer-section-links">
+                                        <li><a href="#" class="footer-link">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Privacidad</font>
+                                                </font>
+                                            </a></li>
+                                        <li><a href="#" class="footer-link">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Términos</font>
+                                                </font>
+                                            </a></li>
+                                        <li><a href="#" class="footer-link">
+                                                <font dir="auto" style="vertical-align: inherit;">
+                                                    <font dir="auto" style="vertical-align: inherit;">Galletas</font>
+                                                </font>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-bottom">
+                            <div class="footer-copyright">
+                                <p>
+                                    <font dir="auto" style="vertical-align: inherit;">
+                                        <font dir="auto" style="vertical-align: inherit;">© </font>
+                                    </font>
+                                    <font dir="auto" style="vertical-align: inherit;">
+                                        <font dir="auto" style="vertical-align: inherit;">2025 </font>
+                                    </font>
+                                    <font dir="auto" style="vertical-align: inherit;">
+                                        <font dir="auto" style="vertical-align: inherit;">CreaMix-DS. Todos los derechos
+                                            reservados.</font>
+                                    </font>
+                                </p>
+                            </div>
+                            <div class="footer-bottom-links"><a href="#" class="footer-bottom-link">
+                                    <font dir="auto" style="vertical-align: inherit;">
+                                        <font dir="auto" style="vertical-align: inherit;">Aviso de privacidad</font>
+                                    </font>
+                                </a><a href="#" class="footer-bottom-link">
+                                    <font dir="auto" style="vertical-align: inherit;">
+                                        <font dir="auto" style="vertical-align: inherit;">Términos de servicio</font>
+                                    </font>
+                                </a></div>
+                        </div>
+                    </div>
+                </footer>
             </div>
-        </a>
-   </body>
+        </div>
+    </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <a id="emergent-badge" target="_blank" href="https://app.emergent.sh/?utm_source=emergent-badge" style="
+                display: flex !important;
+                align-items: center !important;
+                position: fixed !important;
+                bottom: 20px;
+                right: 20px;
+                text-decoration: none;
+                padding: 6px 10px;
+                font-family: -apple-system, BlinkMacSystemFont,
+                    &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell,
+                    &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;,
+                    sans-serif !important;
+                font-size: 12px !important;
+                z-index: 9999 !important;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+                border-radius: 8px !important;
+                background-color: #ffffff !important;
+                border: 1px solid rgba(255, 255, 255, 0.25) !important;
+            ">
+        <div style="display: flex; flex-direction: row; align-items: center">
+            <img style="width: 20px; height: 20px; margin-right: 8px"
+                src="https://avatars.githubusercontent.com/in/1201222?s=120&amp;u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&amp;v=4">
+            <p style="
+                        color: #000000;
+                        font-family: -apple-system, BlinkMacSystemFont,
+                            &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu,
+                            Cantarell, &quot;Open Sans&quot;,
+                            &quot;Helvetica Neue&quot;, sans-serif !important;
+                        font-size: 12px !important;
+                        align-items: center;
+                        margin-bottom: 0;
+                    ">
+                <font dir="auto" style="vertical-align: inherit;">
+                    <font dir="auto" style="vertical-align: inherit;">
+                        Hecho con Emergent
+                    </font>
+                </font>
+            </p>
+        </div>
+    </a>
+    <script type="text/javascript" crossorigin="anonymous"
+        src="https://us-assets.i.posthog.com/static/web-vitals.js?v=1.258.3"></script>
+    <script type="text/javascript" crossorigin="anonymous"
+        src="https://us-assets.i.posthog.com/static/surveys.js?v=1.258.3"></script>
+    <script type="text/javascript" crossorigin="anonymous"
+        src="https://us-assets.i.posthog.com/static/dead-clicks-autocapture.js?v=1.258.3"></script>
+    <script type="text/javascript" crossorigin="anonymous"
+        src="https://us-assets.i.posthog.com/static/recorder.js?v=1.258.3"></script>
+    <script type="text/javascript" crossorigin="anonymous"
+        src="https://us-assets.i.posthog.com/array/phc_yJW1VjHGGwmCbbrtczfqqNxgBDbhlhOWcdzcIJEOTFE/config.js"></script>
+    <script>
+        !(function (t, e) {
+            var o, n, p, r;
+            e.__SV ||
+                ((window.posthog = e),
+                    (e._i = []),
+                    (e.init = function (i, s, a) {
+                        function g(t, e) {
+                            var o = e.split(".");
+                            2 == o.length && ((t = t[o[0]]), (e = o[1])),
+                                (t[e] = function () {
+                                    t.push(
+                                        [e].concat(
+                                            Array.prototype.slice.call(
+                                                arguments,
+                                                0,
+                                            ),
+                                        ),
+                                    );
+                                });
+                        }
+                        ((p = t.createElement("script")).type =
+                            "text/javascript"),
+                            (p.crossOrigin = "anonymous"),
+                            (p.async = !0),
+                            (p.src =
+                                s.api_host.replace(
+                                    ".i.posthog.com",
+                                    "-assets.i.posthog.com",
+                                ) + "/static/array.js"),
+                            (r =
+                                t.getElementsByTagName(
+                                    "script",
+                                )[0]).parentNode.insertBefore(p, r);
+                        var u = e;
+                        for (
+                            void 0 !== a ? (u = e[a] = []) : (a = "posthog"),
+                            u.people = u.people || [],
+                            u.toString = function (t) {
+                                var e = "posthog";
+                                return (
+                                    "posthog" !== a && (e += "." + a),
+                                    t || (e += " (stub)"),
+                                    e
+                                );
+                            },
+                            u.people.toString = function () {
+                                return u.toString(1) + ".people (stub)";
+                            },
+                            o =
+                            "init me ws ys ps bs capture je Di ks register register_once register_for_session unregister unregister_for_session Ps getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty Es $s createPersonProfile Is opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Ss debug xs getPageViewId captureTraceFeedback captureTraceMetric".split(
+                                " ",
+                            ),
+                            n = 0;
+                            n < o.length;
+                            n++
+                        )
+                            g(u, o[n]);
+                        e._i.push([i, s, a]);
+                    }),
+                    (e.__SV = 1));
+        })(document, window.posthog || []);
+        posthog.init("phc_yJW1VjHGGwmCbbrtczfqqNxgBDbhlhOWcdzcIJEOTFE", {
+            api_host: "https://us.i.posthog.com",
+            person_profiles: "identified_only", // or 'always' to create profiles for anonymous users as well
+        });
+    </script>
+    <div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate"
+        style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: 'Google Sans', Arial, sans-serif;"
+        data-id="">
+        <div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd">
+            <div class="VIpgJd-yAWNEb-hvhgNd-Ud7fr">
+                <img src="https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg" width="24" height="24"
+                    alt="">
+                <div class=" VIpgJd-yAWNEb-hvhgNd-IuizWc-i3jM8c " dir="ltr">Texto original</div>
+            </div>
+            <div class="VIpgJd-yAWNEb-hvhgNd-k77Iif">
+                <div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1">
+
+                </div>
+            </div>
+            <div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr">
+                <div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr">
+                    <div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">Valora esta traducción</div>
+                    <div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">Tu opinión servirá para ayudar a mejorar el Traductor de
+                        Google</div>
+                </div>
+                <div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr">
+                    <button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf"
+                        title="Buena traducción" aria-label="Buena traducción" aria-pressed="false">
+                        <span id="goog-gt-thumbUpIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false"
+                                class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+                                <path
+                                    d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z">
+                                </path>
+                            </svg></span>
+                        <span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24" viewBox="0 0 24 24"
+                                focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+                                <path
+                                    d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z">
+                                </path>
+                            </svg></span></button><button id="goog-gt-thumbDownButton" type="button"
+                        class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Mala traducción" aria-label="Mala traducción"
+                        aria-pressed="false">
+                        <span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24"
+                                focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+                                <path
+                                    d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z">
+                                </path>
+                            </svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24"
+                                viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+                                <path
+                                    d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z">
+                                </path>
+                            </svg></span></button>
+                </div>
+            </div>
+            <div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce">
+                <form id="goog-gt-votingForm" action="//translate.googleapis.com/translate_voting?client=te_lib"
+                    method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl"
+                        id="goog-gt-votingInputSrcLang">
+                    <input type="text" name="tl" id="goog-gt-votingInputTrgLang"><input type="text" name="query"
+                        id="goog-gt-votingInputSrcText">
+                    <input type="text" name="gtrans" id="goog-gt-votingInputTrgText"><input type="text" name="vote"
+                        id="goog-gt-votingInputVote">
+                </form>
+                <iframe name="votingFrame" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
