@@ -23,11 +23,6 @@
 /* Layout System - Dark Theme */
 .dark-container {
   background: var(--bg-primary);
-  background-image: 
-    repeating-linear-gradient(0deg, transparent, transparent 1px, transparent 1px, transparent 7.6923%),
-    repeating-linear-gradient(-90deg, #fff, #fff 1px, transparent 1px, transparent 7.6923%);
-  background-size: 100% 100%;
-  opacity: 0.14;
   position: relative;
   min-height: 100vh;
   padding-top: 80px;
